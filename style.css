@@ -15,7 +15,9 @@ License URI: https://opensource.org/licenses/MIT
    background: -moz-linear-gradient(white, gray); /* For Firefox 3.6 to 15 */
    background: linear-gradient(white, gray); /* Standard syntax (must be last) */
    margin-top: 15px;
-   padding: 25px;
+   padding-left: 0px;
+   padding-right: 0px;
+   padding-bottom: 1px;
 }	
 
 blockquote {
@@ -65,6 +67,9 @@ blockquote:before {
   text-align: right;
   padding: 0 40px 0 0;
   color: black;
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+
 }
 
 .category {
@@ -94,6 +99,11 @@ body {
 .thin {
   height: 2px;
   background: black;
+}
+
+.featured-thin {
+  height: 0.7px;
+  background: white;
 }
 
 .thick {
@@ -209,15 +219,16 @@ p {
 }
 
 a:visited {
-  color: gray;
+  color: white;
+  text-decoration: underline;
 }
 
 a:link {
-  color: black;
+  color: white;
 }
 
 a:hover {
-  color: black;
+  color: white;
 }
 
 .card-text {
