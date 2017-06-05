@@ -1,0 +1,270 @@
+/*
+Theme Name: Newsprint
+Theme URI: https://github.com/MGageMorgan
+Author: M. Gage Morgan
+Author URI: https://gagesblog.com/
+Description: Newsprint is an elegant blog theme that aims to #MakeSerifGreatAgain because, as many of you don't realize, #SerifLivesMatter
+Version: 0.1
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+*/
+#featured {
+   background: gray; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(white, gray); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(white, gray); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(white, gray); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(white, gray); /* Standard syntax (must be last) */
+   margin-top: 15px;
+   padding: 25px;
+}	
+
+blockquote {
+font-family: Brawler, serif;
+font-size: 16px;
+font-style: italic;
+width: 5vhmax;
+margin: 1em 0;
+padding: 0.25em 40px;
+line-height: 5vhmax;
+position: relative;
+color: black;
+border-left:7px solid black;
+background:#f1f1f1;
+}
+
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -6px;
+    top: 1px;
+    color: #7a7a7a;
+}
+
+.marquee {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
+
+.tagline {
+  font-family: "Asar", serif;
+  text-align: right;
+  padding: 0 40px 0 0;
+  color: black;
+}
+
+.category {
+  background: black;
+  color: white;
+  padding-left: 5px;
+  margin: 3px 5px 0 6px;
+}
+
+@font-face {
+  font-family: "Brawler", serif;
+  font-weight: 600;
+  src: url("/fonts/Asar-Regular.eot");
+}
+body {
+  /* margin: 10px 15px 10px 15px; */
+}
+
+.header {
+  padding: 0 0 0 10px;
+}
+
+.social {
+  padding: 0 15px 0 150px;
+}
+
+.thin {
+  height: 2px;
+  background: black;
+}
+
+.thick {
+  height: 4px;
+  background: black;
+  margin: 5px 0 0 0;
+}
+
+.head {
+  height: 6px;
+  background: black;
+  margin: 5px 0 0 0;
+}
+
+ul.nav-tabs {
+  background: lightgray;
+  padding: 4px 4px 0 8px;
+}
+
+.tabs {
+  margim: -10px 0 0 0;
+}
+
+.nav-link {
+  color: gray;
+}
+
+.meta {
+  margin: 0 45px 0 0;
+}
+
+h3, .normal, p {
+  margin: 0 5px 0 5px;
+}
+
+p, .card-title {
+ /* padding: 4px 5px 4px 5px; */
+}
+
+.ribbon {
+  font-size: 12px !important;
+  font-family: "Mate", serif;
+  width: auto;
+  position: relative;
+  background: black;
+  color: #fff;
+  text-align: left;
+  padding: 0.5em 2em;
+}
+
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: inline;
+  bottom: -0.9em;
+  border: 1em solid black;
+  z-index: -13;
+}
+
+.ribbon:after {
+  right: -1.7em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+.ribbon .ribbon-contentenido:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: gray transparent transparent transparent;
+  bottom: -1em;
+}
+
+.ribbon .ribbon-contentenido:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+.dropdown {
+  margin-left: 420px;
+}
+
+.btn {
+  background: white;
+  color: black;
+}
+
+.dropdown-menu {
+  width: 300px !important;
+  height: 400px !important;
+  padding: 10px;
+}
+/*
+.post {
+  /* padding: 0 75px 0 75px; */
+  min-width: 1050px;
+}
+*/
+a {
+  @extends .card-title;
+}
+
+.meta {
+  align: right;
+}
+
+p {
+  font-family: "Brawler", serif;
+  font-size: 17.5px;
+  font-size: 5vhmax;
+  line-height: 1.5;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.card-text {
+  font-family: "Brawler", serif;
+  font-weight: 590;
+  font-size: 17.5px;
+  line-height: 1.5;
+  padding: 10px 0 10px 10px;
+}
+
+ul {
+  font-family: "Brawler", serif;
+  font-size: 17.5px;
+  line-height: 1.5;
+}
+
+ol {
+  font-family: "Brawler", serif;
+  font-size: 17.5px;
+  line-height: 1.5;
+}
+
+.card-title {
+  padding: 0 0 10px 10px;
+  font-family: "Bitter", serif;
+}
+
+h1 {
+  padding: 0 0 10px 10px;
+  font-family: "Bitter", serif;
+  font-size: 10vhmax;
+}
+
+img {
+  padding: 0 10px 0 0;
+}
+
+.title {
+  padding: 0 0 0 0;
+  font-family: "Bitter", serif;
+}
+
+.avatar {
+  border-radius: 0px;
+  max-width: 20%;
+  max-height: 20%;
+
+}
+
+/*# sourceMappingURL=main.css.map */
