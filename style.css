@@ -1,13 +1,44 @@
 /*
-Theme Name: Newsprint
+Theme Name: Newsprint v0.6
 Theme URI: https://github.com/MGageMorgan
 Author: M. Gage Morgan
 Author URI: https://gagesblog.com/
 Description: Newsprint is an elegant blog theme that aims to #MakeSerifGreatAgain because, as many of you don't realize, #SerifLivesMatter
-Version: 0.4
+Version: 0.6
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 */
+
+#singinfo {
+   padding-right: 20px;
+   padding-bottom: 20px;
+   padding-top: 20px;
+   border-left: 2px solid white;
+   border-spacing: 5px;
+}
+
+#singlborder {
+   border-right: 1px solid white;
+   border-spacing: 5px;
+}
+
+#site {
+   padding-bottom: 0px;
+   text-align: right;
+   color: white;
+   padding-right: 0px;
+   padding-left: 100px;
+  text-shadow: 1.2px 1.2px rgb(50, 50, 50);
+}
+
+#auth {
+   padding-top: 30px;
+   color: white;
+   text-shadow: 1.2px 1.2px rgb(50, 50, 50);
+   padding-right: 250px;
+   padding-left: 10px;
+}
+
 #featured {
    background: gray; /* For browsers that do not support gradients */
    background: -webkit-linear-gradient(white, gray); /* For Safari 5.1 to 6.0 */
@@ -15,10 +46,23 @@ License URI: https://opensource.org/licenses/MIT
    background: -moz-linear-gradient(white, gray); /* For Firefox 3.6 to 15 */
    background: linear-gradient(white, gray); /* Standard syntax (must be last) */
    margin-top: 15px;
+   margin-bottom: 0px;
    padding-left: 0px;
    padding-right: 0px;
    padding-bottom: 1px;
 }	
+
+#singl {
+   background: gray; /* For browsers that do not support gradients */
+   background: -webkit-linear-gradient(white, gray); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(white, gray); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(white, gray); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(white, gray); /* Standard syntax (must be last) */
+   margin-top: 15px;
+   padding-left: -1px;
+   padding-right: -1px;
+   padding-bottom: none;
+}
 
 blockquote {
 font-family: Brawler, serif;
@@ -62,13 +106,14 @@ blockquote:before {
   background: #ccc;
 }
 
-.tagline {
-  font-family: "Asar", serif;
-  text-align: right;
+.tagline h5 {
+  font-family: "Bitter", serif;
+  /* text-align: center; */
   padding: 0 40px 0 0;
-  color: black;
-  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-  transform: rotate(7deg);
+  color: rgb(40,40,40);
+  text-shadow: 2px 2px gray;
+  -webkit-transform: rotate(6deg); /* Chrome, Safari, Opera */
+  transform: rotate(6deg);
 
 }
 
@@ -101,6 +146,11 @@ body {
   background: black;
 }
 
+.singlline {
+  height: 1.9px;
+  background: white;
+}
+
 .featured-thin {
   height: 0.7px;
   background: white;
@@ -128,7 +178,7 @@ ul.nav-tabs {
 }
 
 .nav-link {
-  color: gray;
+  color: black;
 }
 
 .meta {
@@ -254,6 +304,7 @@ ol {
 .card-title {
   padding: 0 0 10px 10px;
   font-family: "Bitter", serif;
+  text-shadow: 1.2px 1.2px rgb(50, 50, 50);
 }
 
 h1 {
@@ -267,6 +318,7 @@ img {
 }
 
 .title {
+  text-shadow: 2px 2px gray;
   padding: 0 0 0 0;
   font-family: "Bitter", serif;
 }
@@ -279,3 +331,18 @@ img {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

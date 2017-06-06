@@ -29,12 +29,19 @@
        <?php previous_posts_link( 'Newer Entries &#x2192;' ); ?></div>
        </div>
           <!-- Post start -->
-          <div class="row">
 
-
+<?php $i = 0; ?>
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
-                        <div class="col-sm-6">
+<?php
+if($i == 0) {
+	echo '<div class="row">';
+}
+?>
+
+
+			
+                        <div class="col-md-6">
 			<hr class="thin">
 	   <?php
              if ( has_post_thumbnail() ) { ?>
@@ -66,16 +73,31 @@
                                  //echo substr($content, 0, 255); ?>
                            <?php edit_post_link(); ?>
                            <?php wp_link_pages(); ?></div>
-                          <hr class="thick"><br>
-                          </div>
+                          <hr class="thick"><br>  
+</div>
 
+  
+
+<?php
+$i++;
+if($i == 2) {
+	$i = 0;
+	echo '</div>';
+}
+?>
 <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+<?php
+if($i > 0) {
+	echo '</div>';
+}
+?>
 <?php endif; ?>
+  <!--<div class="clearfix hidden-md-up"></div>-->
 
-          </div>
-        </div>
+
+
 <?php //get_sidebar(); ?>
-      </div>
-    </div>
-  </body>
+ </body>
 </html>
+
+

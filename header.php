@@ -24,7 +24,7 @@
 	<a class="github-button" href="https://github.com/MGageMorgan" data-size="large" data-show-count="true" aria-label="Follow @MGageMorgan on GitHub">Follow @MGageMorgan</a>&nbsp;
 	</h1>&nbsp;
         <div class="col-md-3 header push-md-1">	
-	<strong class="tagline"><?php bloginfo( $show = 'description' ); ?></strong>
+	<center><div class="text title tagline"><?php bloginfo( $show = 'description' ); ?></strong></center>
 	</div>
       </div>
       <div class="row tabs">
