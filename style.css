@@ -313,6 +313,14 @@ h1 {
   font-size: 10vhmax;
 }
 
+h2 {
+  font-family: "Bitter", serif;
+}
+
+h3,h4,h5,h6,h7{
+  font-family: "Bitter", serif;
+}
+
 img {
   padding: 0 10px 0 0;
 }
