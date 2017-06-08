@@ -31,6 +31,10 @@ License URI: https://opensource.org/licenses/MIT
   text-shadow: 1.2px 1.2px rgb(50, 50, 50);
 }
 
+.white {
+   color: black;
+}
+
 #auth {
    padding-top: 30px;
    color: white;
