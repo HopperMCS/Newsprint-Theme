@@ -17,8 +17,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       <div class="row">
       <br>
          <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-            <h4 class="card-title" align="left">
-               <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
+            <h4 class="card-title" id="white" align="left">
+               <a id="white" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
                <?php $content = get_the_title();
                      $content = strip_tags($content);
                      echo substr($content, 0, 50); 
@@ -59,8 +59,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 <div class="row">
 
          <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-            <h4 class="card-title" align="left">
-               <a class="white" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
+            <h4 class="card-title" id="black" align="left">
+               <a id="black" href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
                <?php $content = get_the_title();
                      $content = strip_tags($content);
                      echo substr($content, 0, 50); 
@@ -122,3 +122,4 @@ if($i > 0) {
 
 endif; 
 ?>
+

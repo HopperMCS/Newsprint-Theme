@@ -31,10 +31,6 @@ License URI: https://opensource.org/licenses/MIT
   text-shadow: 1.2px 1.2px rgb(50, 50, 50);
 }
 
-.white {
-   color: black;
-}
-
 #auth {
    padding-top: 30px;
    color: white;
@@ -180,11 +176,11 @@ ul.nav-tabs {
 .tabs {
   margim: -10px 0 0 0;
 }
-
+/**
 .nav-link {
   color: black;
 }
-
+**/
 .meta {
   margin: 0 45px 0 0;
 }
@@ -271,7 +267,7 @@ p {
   font-size: 5vhmax;
   line-height: 1.5;
 }
-
+/**
 a:visited {
   color: white;
   text-decoration: underline;
@@ -284,7 +280,7 @@ a:link {
 a:hover {
   color: white;
 }
-
+**/
 .card-text {
   font-family: "Brawler", serif;
   font-weight: 590;
@@ -309,6 +305,14 @@ ol {
   padding: 0 0 10px 10px;
   font-family: "Bitter", serif;
   text-shadow: 1.2px 1.2px rgb(50, 50, 50);
+}
+
+#white,a:link,a:visited {
+   color: white;
+}
+
+#black,a:link,a:visited {
+   color: black;
 }
 
 h1 {
@@ -343,6 +347,7 @@ img {
 }
 
 /*# sourceMappingURL=main.css.map */
+
 
 
 
