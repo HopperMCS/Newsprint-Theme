@@ -121,5 +121,4 @@ if($i > 0) {
 }
 
 endif; 
-wp_get_footer();
 ?>

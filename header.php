@@ -3,7 +3,7 @@
 <html>
   <body>
     <div class="container">
-      <hr class="thin">
+      <br><br><hr class="thin">
       <div class="row header">
         <h1 class="title col-md-8 header text">
 	<img width="45px" height="45px" src="<?php echo get_theme_file_uri( 'images/header.png' ); ?>">

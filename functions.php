@@ -22,6 +22,13 @@ endif;
 
 add_action( 'after_setup_theme', 'newsprint_theme_setup' );
 
+function newsprint_login_adminbar( $wp_admin_bar) {
+	if ( !is_user_logged_in() )
+	$wp_admin_bar->add_menu( array( 'parent' => 'top-secondary', 'title' => __( 'Log In' ), 'href' => wp_login_url() ) );
+}
+add_action( 'admin_bar_menu', 'newsprint_login_adminbar' );
+add_filter( 'show_admin_bar', '__return_true' , 1000 );
+
 function newsprint_development() {
     register_post_type('newsprint_devel',
                        [

@@ -3,6 +3,7 @@
    get_header(); 
    get_template_part( 'templates/post-nav' ); 
    get_template_part( 'templates/index_loop' ); 
+   get_footer();
 ?>
 
  </body>

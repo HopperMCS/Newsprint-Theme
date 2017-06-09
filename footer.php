@@ -19,4 +19,4 @@
   <hr class="head">
 
   </div>
-
+<?php wp_footer(); ?>
