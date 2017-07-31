@@ -6,7 +6,7 @@
       <br><br><hr class="thin">
       <div class="row header">
         <h1 class="title col-md-8 header text">
-	<img width="45px" height="45px" src="<?php echo get_theme_file_uri( 'images/header.png' ); ?>">
+	<img width="70" height="60" src="<?php echo get_theme_file_uri( 'images/header.png' ); ?>">
 	<?php bloginfo( $show = 'name', $filter = 'raw' ); ?>
 	<a class="github-button" href="https://github.com/MGageMorgan/Newsprint-Theme/archive/master.zip" data-size="large" aria-label="Download MGageMorgan/Newsprint-Theme on GitHub">Download The "Newsprint" Theme</a>
 	<a class="github-button" href="https://github.com/MGageMorgan" data-size="large" data-show-count="true" aria-label="Follow @MGageMorgan on GitHub">Follow @MGageMorgan</a>&nbsp;
